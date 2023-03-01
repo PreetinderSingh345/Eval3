@@ -9,3 +9,9 @@ header {
   background-color: black;
   color: #ffffff;
 }
+
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 0 50px;
+  }
+}

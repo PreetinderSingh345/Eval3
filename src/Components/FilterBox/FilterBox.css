@@ -45,3 +45,21 @@
   font-weight: bold;
   color: #9b9999;
 }
+
+#filter-options {
+  border: 1px solid black;
+  height: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.filter-radio-buttons {
+  border: 1px solid black;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

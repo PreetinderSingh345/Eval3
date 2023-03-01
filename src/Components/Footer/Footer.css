@@ -16,3 +16,16 @@ footer {
   border-radius: 15px;
   border: 2px solid grey;
 }
+
+@media screen and (max-width: 1200px) {
+  footer {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .theme-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
