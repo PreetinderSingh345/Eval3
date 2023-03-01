@@ -3,5 +3,9 @@ import { render, screen, waitFor } from '@testing-library/react';
 import FilterBox from '..';
 
 describe('FilterBox', () => {
-  it('', () => {});
+  it('should render correctly', () => {
+    const { asFragment } = render(<FilterBox />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
