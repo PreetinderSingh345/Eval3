@@ -14,5 +14,5 @@ footer {
   width: 50px;
   margin: 0 20px;
   border-radius: 15px;
-  background-color: #9b9999;
+  border: 2px solid grey;
 }

@@ -1,54 +1,57 @@
 .event {
-  border: 1px solid black;
   width: 45%;
-  height: 400px;
   margin: 25px 0;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   font-family: sans-serif;
   gap: 10px;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  min-width: 350px;
 }
 
 .event-img {
-  height: 250px;
   width: 100%;
-  border: 1px solid black;
+  height: fit-content;
+  border-radius: 15px 15px 0 0;
 }
 
 .event-name {
   border: 1px solid black;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
+  padding: 10px;
 }
 
 .event-description {
   border: 1px solid black;
   text-align: center;
   margin: 0;
+  padding: 10px;
 }
 
 .event-venue {
-  border: 1px solid black;
   font-size: medium;
   font-weight: bold;
+  padding: 10px;
 }
 
 .event-date-time {
-  border: 1px solid black;
   font-size: medium;
   font-weight: bold;
+  padding: 10px;
 }
 
 .event-registered-bookmarked {
-  border: 1px solid black;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .event-registered {
-  border: 1px solid black;
   display: flex;
   align-items: center;
 }
@@ -62,4 +65,11 @@
 .event-icons {
   height: 35px;
   width: 35px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .event {
+    width: 100%;
+  }
 }
