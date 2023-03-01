@@ -1,5 +1,4 @@
 #filter-box {
-  border: 1px solid black;
   height: 10%;
   display: flex;
   justify-content: space-between;
@@ -7,7 +6,6 @@
 }
 
 #filter {
-  border: 1px solid black;
   width: 20%;
   display: flex;
   justify-content: space-between;
@@ -27,7 +25,6 @@
 }
 
 #search {
-  border: 1px solid black;
   width: 40%;
   display: flex;
   justify-content: space-between;
@@ -47,7 +44,6 @@
 }
 
 #filter-options {
-  border: 1px solid black;
   height: 15%;
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +53,6 @@
 }
 
 .filter-radio-buttons {
-  border: 1px solid black;
   width: 45%;
   display: flex;
   justify-content: center;
