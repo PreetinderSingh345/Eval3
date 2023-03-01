@@ -1,0 +1,40 @@
+#filter-box {
+  border: 1px solid black;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+#filter {
+  border: 1px solid black;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-box-icons {
+  height: 40px;
+  width: 40px;
+}
+
+#filter span {
+  font-size: large;
+  font-weight: bold;
+}
+
+#search {
+  border: 1px solid black;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#search-input {
+  width: 85%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}

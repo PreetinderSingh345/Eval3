@@ -1,0 +1,8 @@
+#events {
+  border: 1px solid black;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: scroll;
+}
