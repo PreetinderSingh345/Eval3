@@ -8,7 +8,7 @@
 
 #filter {
   border: 1px solid black;
-  width: 15%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,11 +22,12 @@
 #filter span {
   font-size: large;
   font-weight: bold;
+  margin: 0 5px;
 }
 
 #search {
   border: 1px solid black;
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,4 +38,8 @@
   height: 40px;
   border-radius: 10px;
   border: 1px solid gray;
+  margin: 0 5px;
+  font-size: medium;
+  font-weight: bold;
+  color: #9b9999;
 }
