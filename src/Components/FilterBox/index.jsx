@@ -16,7 +16,7 @@ function FilterBox({ filter, setFilter }) {
 
   return (
     <>
-      <div id="filter-box">
+      <div id="filter-box" data-testid='filter-box'>
         <div id="filter">
           <FontAwesomeIcon icon={faFilter} className="filter-box-icons" />
           <span>FILTER</span>

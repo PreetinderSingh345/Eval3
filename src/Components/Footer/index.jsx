@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useState, useEffect } from 'react';
 import { GET_THEMES, SAVE_THEME } from '../../Constants/apiEndPoints';
 import makeRequest from '../../Utils/makeRequest';
@@ -35,11 +36,17 @@ function Footer() {
 
   return (
     <footer>
-      <span>THEMES</span>
+      <span
+        data-testid="themes
+      "
+      >
+        THEMES
+      </span>
 
       {themes.map((theme) => {
         return (
           <div
+            key={uuidv4()}
             className="theme-icon"
             style={{
               backgroundColor: theme.colorHexCode,
@@ -48,6 +55,7 @@ function Footer() {
               }),
             }}
             onClick={() => handleThemeChange(theme.id)}
+            data-testid="theme-icon"
           ></div>
         );
       })}

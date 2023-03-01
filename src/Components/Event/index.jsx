@@ -55,7 +55,7 @@ function Event({
   }
 
   return (
-    <div className="event">
+    <div className="event" data-testid="event">
       <img src={img} alt="" className="event-img" />
       <span className="event-name">{name}</span>
       <p className="event-description">{description}</p>

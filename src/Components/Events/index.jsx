@@ -12,13 +12,17 @@ function Events() {
   useEffect(() => {
     makeRequest(GET_ALL_EVENTS)
       .then((response) => {
-        response.sort((event1, event2) => {
-          return new Date(event1.datetime) - new Date(event2.datetime);
-        });
+        if (response) {
+          response.sort((event1, event2) => {
+            return new Date(event1.datetime) - new Date(event2.datetime);
+          });
 
-        response.forEach((event, index) => {
-          response[index].datetime = new Date(event.datetime).toLocaleString();
-        });
+          response.forEach((event, index) => {
+            response[index].datetime = new Date(
+              event.datetime
+            ).toLocaleString();
+          });
+        }
 
         setEvents(response);
       })
@@ -30,7 +34,7 @@ function Events() {
   return (
     <>
       {events ? (
-        <div id="events">
+        <div id="events" data-testid="events">
           {events.map((event) => {
             return (
               <Event
